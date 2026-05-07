@@ -9824,7 +9824,7 @@ function categoryColorClasses(cat) {
 // ============================================================================
 function FlashcardsView({ flashcardState, setFlashcardState, quizBankState, setQuizBankState, selectedCourseId, pendingIntent, onIntentConsumed }) {
   const [mode, setMode] = React.useState('browse'); // browse | study | match | quiz | scenarios
-  const [examFilter, setExamFilter] = React.useState(state.settings.selectedCourseId || 'all');
+  const [examFilter, setExamFilter] = React.useState(selectedCourseId || 'all');
   const [categoryFilter, setCategoryFilter] = React.useState('all');
   const [searchQuery, setSearchQuery] = React.useState('');
   // Scenario-quiz initial source, driven by the Focus-view weak-spot chip.
